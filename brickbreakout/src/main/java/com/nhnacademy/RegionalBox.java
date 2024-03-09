@@ -61,5 +61,8 @@ public class RegionalBox implements Regional{
     protected void setY(int y) {
         region.setLocation(this.getX()-getWidth()/2, y-getHeight()/2);
     }
+    public int getId(){
+        return this.id;
+    }
     
 }

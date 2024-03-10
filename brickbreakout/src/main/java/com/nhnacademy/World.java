@@ -6,7 +6,6 @@ import java.util.List;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-
 import javax.swing.JPanel;
 
 import org.apache.logging.log4j.LogManager;
@@ -15,9 +14,9 @@ import org.apache.logging.log4j.Logger;
 public class World extends JPanel implements MouseMotionListener{
     public List<Regional> regionalList = new ArrayList<>();
     public List<PaintableString> stringList = new ArrayList<>();
-    static final Logger logger = LogManager.getLogger();
-    PaintableBox userBox;
+    private PaintableBox userBox;
     
+    static final Logger logger = LogManager.getLogger();
     public World(){
         super();
         userBox = new PaintableBox(Main.USER_BOX_INIT_X, Main.USER_BOX_INIT_Y, Main.USER_BOX_WIDTH, Main.USER_BOX_HEIGHT);

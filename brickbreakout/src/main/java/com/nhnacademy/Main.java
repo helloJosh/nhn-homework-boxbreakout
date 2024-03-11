@@ -1,7 +1,6 @@
 package com.nhnacademy;
 
 import java.awt.Color;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -118,7 +117,6 @@ public class Main {
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         world.gameExplainClear();
@@ -164,7 +162,6 @@ public class Main {
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             logger.info(members[n]);

@@ -2,7 +2,6 @@ package com.nhnacademy;
 
 import java.awt.Color;
 import java.awt.Rectangle;
-import java.awt.geom.Ellipse2D;
 
 public class BoundedBall extends MovableBall implements Bounded{
     Rectangle bounds;

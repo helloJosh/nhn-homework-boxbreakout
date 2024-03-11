@@ -1,7 +1,6 @@
 package com.nhnacademy;
 import java.awt.Color;
 import java.util.Arrays;
-import java.util.Collections;
 public class GameWorld extends MovableWorld {
     public static final int INIT_USER_HP = 100000;
     public static final int INIT_TOTALSCORE = 0;

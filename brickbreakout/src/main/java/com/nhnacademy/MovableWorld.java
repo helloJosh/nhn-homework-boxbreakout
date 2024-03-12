@@ -28,6 +28,7 @@ public class MovableWorld extends World{
                                 ((Bounded)object).bounce(otherObject);
                                 if(otherObject instanceof PaintableBox && otherObject == regionalList.get(4)){
                                     ((GameWorld)this).gameUserLoseHp();
+                                    HitFunction f = (((Bounded)object))->{HitListener.bounceReduceHp(((Bounded)object));};
                                 }
                                 if(otherObject instanceof PaintableBrickBox){
                                     if(((PaintableBrickBox)otherObject).getHp() == 0){

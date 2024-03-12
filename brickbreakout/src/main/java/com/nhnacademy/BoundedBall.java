@@ -3,8 +3,9 @@ package com.nhnacademy;
 import java.awt.Color;
 import java.awt.Rectangle;
 
-public class BoundedBall extends MovableBall implements Bounded{
+public class BoundedBall extends MovableBall implements Bounded, HitListener{
     Rectangle bounds;
+    private HitListener hitListener;
 
     public BoundedBall(int x, int y, int radius, Color color){
         super(x,y,radius, color);
@@ -56,5 +57,14 @@ public class BoundedBall extends MovableBall implements Bounded{
                     this.setDX(-this.getDX());
             }
         }
+    }
+    
+    @Override
+    public void bounceReduceHp() {
+        
+    }
+    @Override
+    public void bounceRemoveObejct() {
+        
     }
 }
